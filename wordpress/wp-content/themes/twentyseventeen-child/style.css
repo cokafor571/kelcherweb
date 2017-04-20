@@ -1,0 +1,482 @@
+/*
+* Theme Name: Twentyseventeen Child Theme
+* Theme URI: kelcherpromotions.com
+* Description: Theme for the Kelcher website
+* Author: Cody Okafor
+* Author URI: CodyOkafor.com
+* Template: twentyseventeen
+* Version: 0.1.0
+*/
+
+/* general */
+
+@import url("../twentyseventeen/style.css");
+
+body {
+    font-family: 'Sorts+Mill', serif; 
+}
+
+.site-info {
+    display: none; 
+}
+
+.clearfloat {
+    clear: both; 
+}
+
+/* header */ 
+
+@media (min-width: 30em) {
+    .site-branding .wrap {
+        margin-bottom: 15em;
+        max-width: 1280px; 
+    }
+}
+
+.navigation-top {
+    background-color: #1C1919;
+    color: rgb(255,255,255); 
+}
+
+.menu li a, .site-header .navigation-top .menu-scroll-down {
+    color: rgb(255,255,255);
+}
+
+/* front-page */ 
+
+    /* general */
+
+.page .panel-content {
+    width: 100vw; 
+}
+
+    /* front page title borders */ 
+
+#panel1 .entry-header .entry-header-border {
+    border-bottom: 5px solid rgba(0,0,0,0.3); 
+    display: block;
+    width: 10em; 
+    float: left; 
+}
+
+#panel2 .entry-header .entry-header-border {
+    border-bottom: 5px solid rgba(0,0,0,0.3); 
+    display: block;
+    width: 13em; 
+    float: right; 
+}
+
+#panel3 .entry-header .entry-header-border {
+    border-bottom: 5px solid rgba(0,0,0,0.3); 
+    display: block;
+    width: 14.5em; 
+    float: left; 
+}
+
+#panel4 .entry-header .entry-header-border {
+    border-bottom: 5px solid rgba(0,0,0,0.3); 
+    display: block;
+    width: 25.5em; 
+    float: right; 
+}
+
+    /* background pics */ 
+
+.twentyseventeen-panel {
+    width: 100vw; 
+    height: 650px;
+}
+
+#panel1 .panel-content .panel-img {
+    width: 50vw; 
+    height: 650px;
+    background: url(../../../wp-content/uploads/2017/04/shop-bg.jpg) no-repeat center center;
+    background-attachment: fixed;
+    float: left; 
+}
+
+@media (max-width: 768px) {
+    #panel1 .panel-content .panel-img {
+        width: 100vw; 
+        height: 500px;
+        background: url(../../../wp-content/uploads/2017/04/shop-bg.jpg) no-repeat center center;
+        background-attachment: fixed; 
+        float: none; 
+    }
+}
+
+
+#panel2 .panel-content .panel-img {
+    width: 50vw; 
+    height: 650px;
+    background: url(../../../wp-content/uploads/2017/04/music-bg.jpg) no-repeat center center;
+    background-attachment: fixed;
+    float: right; 
+}
+    
+@media (max-width: 768px) {
+    #panel2 .panel-content .panel-img {
+        width: 100vw; 
+        height: 500px;
+        background: url(../../../wp-content/uploads/2017/04/shop-bg.jpg) no-repeat center center;
+        background-attachment: fixed; 
+        float: none; 
+    }
+}
+
+#panel3 .panel-content .panel-img {
+    width: 50vw; 
+    height: 650px;
+    background: url(../../../wp-content/uploads/2017/04/events-bg.png) no-repeat center center;
+    background-attachment: fixed;
+    float: left; 
+}
+    
+@media (max-width: 768px) {
+    #panel3 .panel-content .panel-img {
+        width: 100vw; 
+        height: 500px;
+        background: url(../../../wp-content/uploads/2017/04/shop-bg.jpg) no-repeat center center;
+        background-attachment: fixed; 
+        float: none; 
+    }
+}
+
+#panel4 .panel-content .panel-img {
+    width: 50vw; 
+    height: 650px;
+    background: url(../../../wp-content/uploads/2017/04/promo-bg.jpg) no-repeat center center;
+    background-attachment: fixed;
+    float: right; 
+}
+    
+@media (max-width: 768px) {
+    #panel4 .panel-content .panel-img {
+        width: 100vw; 
+        height: 500px;
+        background: url(../../../wp-content/uploads/2017/04/shop-bg.jpg) no-repeat center center;
+        background-attachment: fixed;
+        float: none; 
+    }
+}
+
+
+    /* front page format */ 
+
+.page #panel1 .panel-content, .page #panel3 .panel-content {
+    float: right; 
+}
+
+.page #panel2 .panel-content, .page #panel4 .panel-content {
+    float: left; 
+}
+
+.site-main .twentyseventeen-panel:first-child {
+    height: 450px; 
+}
+
+.site-main .twentyseventeen-panel:first-child .wrap {
+    padding-top: 1em; 
+}
+
+
+@media (min-width: 30em) {
+    
+    .site-main .twentyseventeen-panel:nth-child(even) .wrap {
+        width: 50vw;
+        float: right; 
+    }
+}
+
+@media (min-width: 30em) {
+    
+    .site-main .twentyseventeen-panel:nth-child(odd) .wrap {
+        width: 50vw;
+        text-align: right; 
+        float: left; 
+    }
+}
+
+@media (min-width: 30em) {
+    
+    .site-main .twentyseventeen-panel .wrap {
+        padding-left: 4em;
+        padding-right: 4em; 
+    }
+}
+
+@media (min-width: 30em) {
+    
+    .site-main .twentyseventeen-panel:first-child .wrap {
+        max-width: 70%;
+        text-align: center;
+        float: none; 
+        width: auto; 
+    }
+}
+
+button {
+    float: right; 
+}
+
+#footer-menu {
+    list-style-type: none; 
+}
+ 
+#footer-menu li {
+    display: inline; 
+    padding: 2em;
+}
+
+    /* format < 768px */ 
+
+@media (max-width: 768px) {
+    .page #panel1 .panel-content, .page #panel3 .panel-content {
+        float: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .page #panel2 .panel-content, .page #panel4 .panel-content {
+        float: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .twentyseventeen-panel {
+        width: 100vw; 
+        height: 1250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-main .twentyseventeen-panel:first-child {
+        height: 600px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .site-main .twentyseventeen-panel:nth-child(even) .wrap {
+        width: 80vw;
+        padding-left: 0;
+        float: none; 
+        margin: 0 auto; 
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .site-main .twentyseventeen-panel:nth-child(odd) .wrap {
+        width: 80vw;
+        padding-right: 0;
+        float: none; 
+        margin: 0 auto; 
+    }
+}
+    /* front page text, size and spacing */
+
+
+.site-main h2 {
+    font-size: 2.3rem; 
+    font-weight: bold; 
+}
+
+.site-main p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.2rem; 
+}
+
+.page .panel-content .entry-header .entry-title {
+    font-size: 3rem; 
+}
+
+/* end front page */ 
+
+/* footer */
+
+footer {
+    background: -webkit-linear-gradient(315deg, #CCAC30, #FFD73C 42%, #FFE788 70%);
+    background: linear-gradient(135deg, #CCAC30, #FFD73C 42%, #FFE788 70%);
+}
+.social-text {
+    text-align: center; 
+    font-size: 1.6rem;
+    color: rgb(255,255,255); 
+}
+
+.social-navigation {
+    width: 100%;
+    text-align: center; 
+}
+
+.navigation-bottom {
+    /* color gradient 
+    background: -webkit-linear-gradient(315deg, #140212, #140212 5%, #290424); 
+    background: linear-gradient(135deg, #140212, #140212 5%, #290424);  
+    */ 
+    text-align: center;
+    margin-top: 2.5em; 
+    font-size: 1rem; 
+}
+
+.menu-footer-menu-container .menu li a {
+    color: #222; 
+}
+
+.menu-footer-menu-container .menu li a:hover {
+    color: #767676; 
+}
+
+
+.copyright {
+    margin-bottom: 0;
+    font-size: 0.95rem; 
+}
+
+.navigation-bottom nav {
+    color: rgb(255,255,255); 
+}
+
+/* end footer */ 
+
+/* pages general styles */
+
+.site-content .wrap {
+    max-width: 100vw;
+}
+
+.page .site-content .wrap #primary {
+    max-width: 100vw;
+}
+
+body.page:not(.twentyseventeen-front-page) .entry-title {
+    font-size: 2.5rem; 
+}
+
+.content-area .site-main .entry-content {
+    margin-left: 4em; 
+}
+/* shop */
+
+    /* kelcher fashion */ 
+
+.kelcher-fashion, .kelcher-hats {
+    -webkit-columns: 3; 
+    -moz-columns: 3;
+    columns: 3;
+
+    -webkit-column-gap: 2em; 
+    -moz-column-gap: 2em; 
+    column-gap: 2em;
+}
+
+/* kelcher music */ 
+
+.site-main .kelchermusic, .site-main .kelchermusic + p, .site-main .cnss-social-icon {
+    display: inline; 
+}
+
+/* promotons */
+
+.experts {
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.promotions .promo1 {
+    background: url(../../uploads/2017/03/scroll_logo.png) no-repeat center center;
+    background-size: auto;
+    background-color: rgba(0,0,0,0.85); 
+
+    overflow:hidden;
+    border-radius:123px;
+    width:245px;
+    height:245px;
+    float: left; 
+}
+
+.promotions .promo2 {
+    background: url(../../uploads/2017/03/logo.png) no-repeat center center;
+    background-size: auto;
+    background-color: #FFFFFF;  
+
+    overflow:hidden;
+    border-radius:120px;
+    width:240px;
+    height:240px;
+    border: 3px solid rgba(0,0,0,0.85);
+    float: left; 
+}
+
+.promotions .promo-text span {
+    font-family: 'Sorts+Mill', serif;
+    font-size: 1.2rem;
+    line-height: 4em; 
+    font-weight: bold; 
+}
+
+.promotions .promo-text {
+    margin-left: 2em;
+    height: 240px;
+    display: inline-block;
+    margin-top: 2em; 
+    margin-bottom: 0;
+    max-width: 650px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: .99rem; 
+    line-height: 1.6em; 
+}
+
+@media (max-width: 992px) {
+    .promotions .promo-text {
+        margin-left: 0;
+        margin-top: 0; 
+        height: auto; 
+        margin-bottom: 1em; 
+    }
+}
+
+/* contacts */ 
+
+.contacts {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contacts h2 {
+    display: inline-block;
+    float: left; 
+    height: auto; 
+}
+
+.contacts .contact-grid {
+    max-width: 90%;
+    margin: 0 auto; 
+    display: inline-block; 
+    height: auto; 
+    margin-left: 4em; 
+}
+
+.contact-grid .title {
+    font-weight: bold;
+    font-size: 1.1rem; 
+}
+
+.contact-grid .hidden {
+    visibility: hidden; 
+}
+
+.contact-grid .line1, .contact-grid .line3, .contact-grid .line5 {
+    float: left;
+    margin-right: 5em; 
+}
+
+.contact-grid .line2, .contact-grid .line4, .contact-grid .line6 {
+    float: right; 
+}
+
+.contact-grid .line3, .contact-grid .line5, .contact-grid .line4, .contact-grid .line6 {
+    margin-top: 2em; 
+}
