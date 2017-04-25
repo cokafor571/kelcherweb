@@ -38,6 +38,14 @@ function kelcher_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'kelcher_scripts' ); 
 
+function kelcher_music() {
+     if ( is_page( 'music-page' ) ) {
+        wp_enqueue_style( 'music', get_stylesheet_directory_uri() . '/music.css'); 
+    }
+}
+
+add_action( 'wp_enqueue_scripts', 'kelcher_music' ); 
+
 function load_fonts() {
     
     $query_args = array(
@@ -48,5 +56,3 @@ function load_fonts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'load_fonts' ); 
-
-

@@ -24,6 +24,14 @@ body {
     clear: both; 
 }
 
+a {
+    outline: 0; 
+}
+a:not(:hover), a:not(:active), a:not(:focus), a:hover, a:active, a:focus {
+    outline: 0; 
+}
+
+
 /* header */ 
 
 @media (min-width: 30em) {
@@ -279,7 +287,9 @@ button {
 
 
 .site-main h2 {
-    font-size: 2.3rem; 
+    font-size: 2.2rem; 
+    letter-spacing: 0.085em;
+    color: #FFD73C; 
     font-weight: bold; 
 }
 
@@ -353,11 +363,19 @@ footer {
 
 body.page:not(.twentyseventeen-front-page) .entry-title {
     font-size: 2.5rem; 
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em; 
+    text-align: center; 
 }
 
 .content-area .site-main .entry-content {
     margin-left: 4em; 
 }
+
+.content-area .site-main .entry-content h1 {
+    font-size: 2.5em; 
+}
+
 /* shop */
 
     /* kelcher fashion */ 
@@ -378,7 +396,25 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
     display: inline; 
 }
 
-/* promotons */
+.music-section {
+    margin-left: 2em; 
+}
+
+iframe {
+    margin-top: 2em; 
+}
+
+@media (max-width: 1300px) {
+    iframe {
+        width: 400px; 
+    }
+}
+
+.coming-soon {
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* promotions */
 
 .experts {
     margin: 0 auto; 
@@ -480,3 +516,16 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 .contact-grid .line3, .contact-grid .line5, .contact-grid .line4, .contact-grid .line6 {
     margin-top: 2em; 
 }
+
+@media (max-width: 896px) {
+    .contact-grid .line2 {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 896px) {
+    .contact-grid .line5 {
+        margin-right: 6em;
+    }
+}
+

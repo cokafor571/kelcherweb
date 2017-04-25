@@ -17,7 +17,6 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 	</header><!-- .entry-header -->
-    <border class="entry-header-border"></border>
     
 	<div class="entry-content">
 		<?php
@@ -28,5 +27,11 @@
 				'after'  => '</div>',
 			) );
 		?>
+            <?php 
+                if (is_page( 'music-page' )) {
+                    get_sidebar(); 
+                }
+            ?> 
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+

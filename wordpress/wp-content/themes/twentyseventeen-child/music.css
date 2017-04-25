@@ -1,0 +1,18 @@
+.entry-content .music-left {
+    float: left;
+    display: inline-block;
+}
+
+.widget-area {
+    float: right; 
+    display: inline-block; 
+}
+
+@media (max-width: 768px) {
+    .widget-area {
+        float: none;
+        margin: 0 auto; 
+        display: block; 
+    }
+}
+

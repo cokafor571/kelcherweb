@@ -1,0 +1,19 @@
+branch-defaults:
+  default:
+    environment: Production
+environment-defaults:
+  Production:
+    branch: null
+    repository: null
+global:
+  application_name: kelcher-wordpress
+  default_ec2_keyname: null
+  default_platform: arn:aws:elasticbeanstalk:us-east-1::platform/PHP 7.0 running on
+    64bit Amazon Linux/2.3.3
+  default_region: us-east-1
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  sc: null
+  workspace_type: Application
