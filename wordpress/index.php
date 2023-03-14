@@ -15,3 +15,21 @@ define('WP_USE_THEMES', true);
 
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+
+
+<?php
+
+<script>
+
+    async function() {
+
+        const url = 'https://twilio.com/api';
+
+        getData() = (url.json);
+        getData().call_user_func;
+
+    }
+
+</script>
+
+?>
